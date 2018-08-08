@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>forms</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="all">
+		<div class="header"><span class="ada">ADA</span><span class="afterADA"> Students feedback</span> </div>
+		<div class="container">
+			<div class="left">
+				<img class="image" src="https://techcrunch.com/wp-content/uploads/2015/04/uncle-sam-we-want-you1-kopie_1.png?w=730&crop=1">
+				<h3 class="feedback">To give us feedback, because this course is made for you! Because it's all about you!</h3>
+				<p class="feedbackParagraph">Fill this form if you:</p>
+				<p class="feedbackParagraph">- Find an error in the content or in the quizzes</p>
+				<p class="feedbackParagraph">- Have a feedback about instructors or the experience</p>
+				<p class="feedbackParagraph">- Have a suggestion on how to make the course better</p>
+			</div>
+			<div class="right">
+				<div class="box1">
+					<h4 class="emailUs">Email Us</h4>
+					<span id="labelMessage" class="labelMessage">Thank you !</span>
+				</div>
+				<form id="formFeed" onsubmit="displayValues()">
+					<div class="box2">
+						<p class="label">Name</p>
+						<input type="text" name="name" required class="inputText">
+					</div>
+					<div class="box3">
+						<p class="label">Track</p>
+						<select id="track">
+							<option>Web</option>
+							<option selected="selected">AI</option>
+							<option>Game</option>
+						</select>
+					</div>
+					<div class="box4">
+						<p class="label">Slide name (or object)</p>
+						<input type="text" name="Slide" class="inputText"><br>
+					</div>
+					<div class="box5">
+						<p class="label">Message</p>
+						<textarea class="textareaInput"></textarea>
+					</div>
+					<div class="box6">
+						<input type="submit" value="SUBMIT" class="buttonSubmit">
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="js/main.js"></script>
+</html>
